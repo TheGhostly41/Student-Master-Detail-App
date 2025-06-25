@@ -1,0 +1,12 @@
+<Page loaded="onload" backgroundColor = "beige">
+  <GridLayout columns="*,2*" rows="*,*,*, *" backgroundColor = "grey">
+    <Label text="ID: " rows="0" col="0"/>
+    <Label text="{{id}}" row="0" col="1"/>
+    <Label text="First Name"  row="1" col="0"/>
+    <TextField text="{{fname}}"  row="1" col="1"/>
+    <Label text="Major: " row="2" col="0"/>
+    <ListPicker items="{{majors}}" selectedIndex="{{selected}}" row="2" col="1"/>
+    <Button text="Update" tap="update" row="3" col="0" colSpan="2"/>
+
+  </GridLayout>
+</Page>

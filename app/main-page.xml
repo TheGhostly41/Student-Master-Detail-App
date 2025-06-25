@@ -1,0 +1,15 @@
+<Page loaded="onLoaded" backgroundColor = "beige" color = "black">
+  <ActionBar title="My Trips"/>
+  <StackLayout>
+    <Button text="Add new" tap="addNew" />
+    <ListView items="{{ list }}" itemTap="onItemTap">
+      <ListView.itemTemplate>
+        <WrapLayout>
+          <Label text="{{ id }}" col="1" />
+          <Label text="{{ fname }}" col="1" />
+      
+        </WrapLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
